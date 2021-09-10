@@ -7,7 +7,7 @@ namespace NCorp.Framework.Middleware.Extensions.Swagger
 {
     public static class SwaggerMiddlewareExtensions
     {
-        public static void UseSwagger(this IServiceCollection services, string name, string version)
+        public static void AddNCorpSwagger(this IServiceCollection services, string name, string version)
         {
             services.AddSwaggerGen(c =>
             {
@@ -42,7 +42,7 @@ namespace NCorp.Framework.Middleware.Extensions.Swagger
             });
         }
 
-        public static void UseSwagger(this IApplicationBuilder app, string serviceName, string version)
+        public static void UseNCorpSwagger(this IApplicationBuilder app, string serviceName, string version)
         {
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint($"/swagger/{version}/swagger.json", $"{serviceName} {version}"));
