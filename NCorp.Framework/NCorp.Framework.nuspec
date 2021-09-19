@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>NCorp.Framework</id>
-    <version>0.3.2</version>
+    <version>0.4.3</version>
     <authors>NimaAiryana</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/NimaAiryana/NCorp.Framework</projectUrl>
     <description>NCorp.Framework</description>
     <copyright>NimaAiryana 2021</copyright>
     <releaseNotes>
-      InvalidFileException changed to InvalidFileMimeTypeException and InvalidFileSizeException
+      EntityNotFoundException added
     </releaseNotes>
     <repository type="git" url="https://github.com/NimaAiryana/NCorp.Framework" branch="master" />
     <dependencies>
